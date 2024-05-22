@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #00ff00;
+    font-family: 'Minecraft', sans-serif;
+}
+
+.menu {
+    font-family: 'Minecraft', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+}
+
+.menu h1 {
+    margin: 0 0 20px 0;
+}
+
+button {
+    font-family: 'Minecraft', sans-serif;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #00ff00;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #007700;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="range"] {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.score {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #00ff00;
+}
+
+canvas {
+    background-color: #000;
+    border: 10px solid #00ff00;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #00ff00;
+}
+
+canvas.red-border {
+    border-bottom: 10px solid #ff0000;
+    box-shadow: 0 0 20px #00ff00, 0 0 20px #ff0000 inset;
+}
